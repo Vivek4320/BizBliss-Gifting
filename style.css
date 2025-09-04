@@ -11,15 +11,6 @@ html, body {
   height: 100%;
   width: 100%;
 }
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.box {
-  flex: 1 1 300px; /* grow, shrink, minimum width */
-}
 
 @media (max-width: 992px) {
   body {
@@ -40,7 +31,7 @@ html, body {
 .box{
   width: 50px;
   height: 50px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, rgba(46, 138, 243, 1) 0%);
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -75,11 +66,6 @@ html, body {
   font-weight: bold;
 }
 
-.get-started, .explore-btn {
-    position: relative;
-    overflow:hidden;
-}
-
 .navbar {
   display: flex;
   justify-content: center;
@@ -93,6 +79,7 @@ html, body {
   right: 0;
   z-index: 1000;
   height: 75px;
+  text-shadow: 1px 2px 4px black;
 }
 
 .get-started {
@@ -102,6 +89,10 @@ html, body {
   margin-right: 20px;
   border: none;
   border-radius: 5px;
+}
+
+.get-started:hover{
+  transform: scale(1.05);
 }
 
 .get-started button {
@@ -172,10 +163,11 @@ html, body {
 }
 
 .hero {
-  background-image: url("images/main\ image.webp");
+  background-image: url("/images/Corporate_Gifts_1.webp");
   background-repeat: no-repeat;
   background-position: center;
-  height: 91.3vh;
+  height: 89.4vh;
+  background-size: cover;
   padding: 50px 0;
   text-align: center;
   color: white;
@@ -203,7 +195,14 @@ html, body {
   font-size: 20px;
 }
 
-.explore-btn {
+.hero-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.hero-btn button {
   background: rgb(16, 116, 230);
   color: white;
   padding: 12px 30px;
@@ -211,15 +210,6 @@ html, body {
   border: none;
   border-radius: 45px;
   cursor: pointer;
-}
-
-.hero .btn:hover {
-  background: rgb(6, 85, 175);
-  transform: scale(1.05);
-}
-
-.hero .btn:active {
-  background: #0b4aa8;
 }
 
 .hero h1{

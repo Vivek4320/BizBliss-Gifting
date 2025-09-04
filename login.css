@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria;
+}
+
+@media (max-width: 400px) {
+    .box {
+        width: 95vw;
+        padding: 24px 8px;
+    }
+    .inputBox input[type="email"],
+    .inputBox input[type="password"] {
+        font-size: 0.95rem;
+        padding: 10px 12px;
+    }
+    button[type="submit"] {
+        font-size: 1rem;
+        padding: 10px 0;
+    }
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Cambria, sans-serif;
+}
+
+.box {
+    background: #fff;
+    padding: 40px 32px 32px 32px;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 25px 25px 30px rgba(46, 138, 243, 0.15);
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box h2 {
+    margin-bottom: 28px;
+    color: black;
+    font-size: 2rem;
+    text-shadow: 1px 1px 3px black;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.inputBox {
+    width: 100%;
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.inputBox input[type="email"],
+.inputBox input[type="password"] {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+    background: #f8faff;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+.inputBox input[type="email"]:focus,
+.inputBox input[type="password"]:focus {
+    border: 1.5px solid rgb(6, 85, 175);
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px 0;
+    background: rgba(46, 138, 243, 1);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.15rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    transform: scale(1.04);
+    background-color: rgb(6, 85, 175);  
+}
+
+p {
+    margin-top: 1rem;
+    margin-left: 1.7rem;
+    font-size: 0.9rem;
+    color: black;
+}
+p a {
+    color: rgba(46, 138, 243, 1);
+    text-decoration: none;
+    font-weight: bold;
+}
+p a:hover {
+    text-decoration: underline;
+}
